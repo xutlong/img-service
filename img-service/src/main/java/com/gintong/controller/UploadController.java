@@ -41,7 +41,6 @@ public class UploadController {
 	        e.printStackTrace();  
 	        return "fild";
 	    }  
-	    // TODO �����ļ�����...  
 	    return "OK"; 
 	}
 }
