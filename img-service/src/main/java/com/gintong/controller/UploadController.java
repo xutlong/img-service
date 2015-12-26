@@ -38,6 +38,9 @@ public class UploadController {
 	           // InputStream对象 
 	           is.close(); 
 	       }
+	       
+	       
+	       
 	    } catch (UnsupportedEncodingException e) {  
 	        e.printStackTrace();  
 	        return "fild";
