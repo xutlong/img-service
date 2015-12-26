@@ -37,7 +37,7 @@ public class UploadController {
 	           fos.close(); 
 	           // InputStream对象 
 	           is.close(); 
-	       }// 你好哦
+	       }// 你好哦 456
 	    } catch (UnsupportedEncodingException e) {  
 	        e.printStackTrace();  
 	        return "fild";
