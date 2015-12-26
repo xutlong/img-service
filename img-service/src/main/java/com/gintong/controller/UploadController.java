@@ -40,7 +40,7 @@ public class UploadController {
 	           is.close(); 
 	       }
 	       
-	       
+	       int vn = 56;
 	       
 	    } catch (UnsupportedEncodingException e) {  
 	        e.printStackTrace();  
