@@ -24,18 +24,18 @@ public class UploadController {
 	       String _fileName = jarFile.getOriginalFilename();
 	       InputStream is = jarFile.getInputStream();
 	       File tempFile = new File(uploadFilePath + _fileName); 
-	       // ¿ªÊ¼±£´æÎÄ¼şµ½·şÎñÆ÷
+	       // å¼€å§‹ä¿å­˜æ–‡ä»¶åˆ°æœåŠ¡å™¨
 	       if(!_fileName.equals("")) {
 	    	   FileOutputStream fos = new FileOutputStream(uploadFilePath + _fileName);
-	    	   byte[] buffer = new byte[8192]; // Ã¿´Î¶Á8K×Ö½Ú  
+	    	   byte[] buffer = new byte[8192]; // æ¯æ¬¡è¯»8Kå­—èŠ‚  
 	           int count = 0;  
-	           // ¿ªÊ¼¶ÁÈ¡ÉÏ´«ÎÄ¼şµÄ×Ö½Ú£¬²¢½«ÆäÊä³öµ½·şÎñ¶ËµÄÉÏ´«ÎÄ¼şÊä³öÁ÷ÖĞ  
+	           // å¼€å§‹è¯»å–ä¸Šä¼ æ–‡ä»¶çš„å­—èŠ‚ï¼Œå¹¶å°†å…¶è¾“å‡ºåˆ°æœåŠ¡ç«¯çš„ä¸Šä¼ æ–‡ä»¶è¾“å‡ºæµä¸­  
 	           while ((count = is.read(buffer)) > 0) {  
-	               fos.write(buffer, 0, count); // Ïò·şÎñ¶ËÎÄ¼şĞ´Èë×Ö½ÚÁ÷  
+	               fos.write(buffer, 0, count); // å‘æœåŠ¡ç«¯æ–‡ä»¶å†™å…¥å­—èŠ‚æµ  
 	           } 
-	           // ¹Ø±ÕFileOutputStream¶ÔÏó  
+	           // å…³é—­FileOutputStreamå¯¹è±¡  
 	           fos.close(); 
-	           // InputStream¶ÔÏó 
+	           // InputStreamå¯¹è±¡ 
 	           is.close(); 
 	       }
 	    } catch (UnsupportedEncodingException e) {  
@@ -45,7 +45,7 @@ public class UploadController {
 	        e.printStackTrace();  
 	        return "fild";
 	    }  
-	    // TODO ´¦ÀíÎÄ¼şÄÚÈİ...  
+	    // TODO ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½...  
 	    return "OK"; 
 	}
 }
