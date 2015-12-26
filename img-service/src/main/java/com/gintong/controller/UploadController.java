@@ -24,7 +24,7 @@ public class UploadController {
 	       String _fileName = jarFile.getOriginalFilename();
 	       InputStream is = jarFile.getInputStream();
 	       File tempFile = new File(uploadFilePath + _fileName); 
-	       // 开始保存文件到服务器    的男的女的
+	       // 开始保存文件到服务器    的男的女的  你好
 	       if(!_fileName.equals("")) {
 	    	   FileOutputStream fos = new FileOutputStream(uploadFilePath + _fileName);
 	    	   byte[] buffer = new byte[8192]; // 每次读8K字节  
